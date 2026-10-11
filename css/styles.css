@@ -356,7 +356,8 @@ h3 {
 .hero-visual img {
   width: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: cover;
+  object-fit: contain;
+  background: #0b0f2e;
 }
 
 /* Sections */
@@ -575,7 +576,7 @@ table.apk-table tr:last-child td {
 
 .shot img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1200 / 560;
   object-fit: cover;
 }
 
