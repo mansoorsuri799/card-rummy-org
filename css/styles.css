@@ -611,35 +611,136 @@ table.apk-table tr:last-child td {
 /* Screens */
 .shot-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 720px) {
   .shot-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 .shot {
-  border-radius: 12px;
+  margin: 0;
+  border-radius: 14px;
   overflow: hidden;
-  border: 1px solid #000;
+  border: 2px solid #000;
   background: #fff;
+  box-shadow: 4px 4px 0 #000;
+}
+
+.shot-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: zoom-in;
+}
+
+.shot-link:hover img {
+  transform: scale(1.02);
 }
 
 .shot img {
   width: 100%;
   aspect-ratio: 1200 / 560;
   object-fit: cover;
+  min-height: 220px;
+  transition: transform 0.25s ease;
+}
+
+@media (min-width: 720px) {
+  .shot img {
+    min-height: 280px;
+  }
 }
 
 .shot figcaption {
-  padding: 0.55rem 0.7rem;
-  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem;
+  font-size: 0.95rem;
   color: #000;
   border-top: 1px solid var(--line);
+  font-weight: 700;
+}
+
+.shot .hint {
+  font-size: 0.78rem;
   font-weight: 600;
+  opacity: 0.7;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox__panel {
+  position: relative;
+  width: min(100%, 1100px);
+  max-height: min(92vh, 900px);
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 14px;
+  box-shadow: 8px 8px 0 #b45309;
+  overflow: auto;
+  padding: 0.75rem;
+}
+
+.lightbox__panel img {
+  width: 100%;
+  height: auto;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f6f6f6;
+}
+
+.lightbox__caption {
+  margin: 0.75rem 0.25rem 0.25rem;
+  color: #000;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #000;
+  border-radius: 999px;
+  background: #fff;
+  color: #000;
+  font-size: 1.35rem;
+  font-weight: 800;
+  cursor: pointer;
+  line-height: 1;
+  z-index: 2;
+}
+
+.lightbox__close:hover {
+  background: #000;
+  color: #fff;
+}
+
+body.lightbox-open {
+  overflow: hidden;
 }
 
 /* Blog cards */

@@ -570,10 +570,30 @@ def build_home() -> None:
     <h2 class="en">Card Rummy screens you will recognize</h2>
     <h2 class="ur urdu-block">کارڈ رمی کی وہ اسکرینز جو آپ پہچانیں گے</h2>
     <div class="shot-grid" style="margin-top:1rem">
-      <figure class="shot"><img src="images/card-rummy-game-interface.webp" width="800" height="1000" alt="Card Rummy game lobby interface on Android"><figcaption class="en">Lobby interface</figcaption><figcaption class="ur">لابی</figcaption></figure>
-      <figure class="shot"><img src="images/card-rummy-games.webp" width="800" height="1000" alt="Card Rummy games collection tiles"><figcaption class="en">Games collection</figcaption><figcaption class="ur">گیمز</figcaption></figure>
-      <figure class="shot"><img src="images/card-rummy-earn-bonus.webp" width="800" height="1000" alt="Card Rummy bonuses and rewards screen"><figcaption class="en">Bonuses</figcaption><figcaption class="ur">بونس</figcaption></figure>
-      <figure class="shot"><img src="images/card-rummy-add-money.webp" width="800" height="1000" alt="Card Rummy add money deposit screen"><figcaption class="en">Add money</figcaption><figcaption class="ur">پیسے شامل</figcaption></figure>
+      <figure class="shot">
+        <a class="shot-link" href="images/card-rummy-game-interface.webp" data-lightbox data-caption-en="Lobby interface" data-caption-ur="لابی">
+          <img src="images/card-rummy-game-interface.webp" width="1200" height="560" alt="Card Rummy game lobby interface on Android" loading="lazy">
+          <figcaption><span class="en">Lobby interface</span><span class="ur">لابی</span><span class="hint en">Click to enlarge</span><span class="hint ur">بڑا دیکھیں</span></figcaption>
+        </a>
+      </figure>
+      <figure class="shot">
+        <a class="shot-link" href="images/card-rummy-games.webp" data-lightbox data-caption-en="Games collection" data-caption-ur="گیمز">
+          <img src="images/card-rummy-games.webp" width="1200" height="560" alt="Card Rummy games collection tiles" loading="lazy">
+          <figcaption><span class="en">Games collection</span><span class="ur">گیمز</span><span class="hint en">Click to enlarge</span><span class="hint ur">بڑا دیکھیں</span></figcaption>
+        </a>
+      </figure>
+      <figure class="shot">
+        <a class="shot-link" href="images/card-rummy-earn-bonus.webp" data-lightbox data-caption-en="Bonuses" data-caption-ur="بونس">
+          <img src="images/card-rummy-earn-bonus.webp" width="1200" height="560" alt="Card Rummy bonuses and rewards screen" loading="lazy">
+          <figcaption><span class="en">Bonuses</span><span class="ur">بونس</span><span class="hint en">Click to enlarge</span><span class="hint ur">بڑا دیکھیں</span></figcaption>
+        </a>
+      </figure>
+      <figure class="shot">
+        <a class="shot-link" href="images/card-rummy-add-money.webp" data-lightbox data-caption-en="Add money" data-caption-ur="پیسے شامل">
+          <img src="images/card-rummy-add-money.webp" width="1200" height="560" alt="Card Rummy add money deposit screen" loading="lazy">
+          <figcaption><span class="en">Add money</span><span class="ur">پیسے شامل</span><span class="hint en">Click to enlarge</span><span class="hint ur">بڑا دیکھیں</span></figcaption>
+        </a>
+      </figure>
     </div>
   </div>
 </section>
