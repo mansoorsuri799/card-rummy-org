@@ -4,8 +4,8 @@
   "description": "Card Rummy APK guides for Pakistan in English and Urdu",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0B0F2E",
-  "theme_color": "#0B0F2E",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "lang": "en",
   "icons": [
     {
