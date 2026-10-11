@@ -1,0 +1,18 @@
+node_modules/
+.next/
+out/
+.DS_Store
+.env*
+!.env.example
+.firecrawl/
+*.tsbuildinfo
+next-env.d.ts
+
+# Unused Next.js scaffold (site is static HTML/CSS)
+src/
+next.config.ts
+tsconfig.json
+tailwind.config.js
+postcss.config.js
+package-lock.json
+public/css/

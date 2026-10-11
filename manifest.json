@@ -1,0 +1,22 @@
+{
+  "name": "Card Rummy",
+  "short_name": "Card Rummy",
+  "description": "Card Rummy APK guides for Pakistan in English and Urdu",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0F2E",
+  "theme_color": "#0B0F2E",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/images/favicon-192.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/images/card-rummy.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}
